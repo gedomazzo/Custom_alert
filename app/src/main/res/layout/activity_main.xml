@@ -1,19 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Space
+        android:layout_width="100px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="250px" />
+
+        <Button
+            android:id="@+id/mess"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:onClick="messege"
+            android:text="Messege" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+
+        <Button
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:onClick="img"
+            android:text="Image" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+
+        <Button
+            android:id="@+id/war"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:onClick="warning"
+            android:text="Warning" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+
+        <Button
+            android:id="@+id/cho"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:onClick="choice"
+            android:text="Choice" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+
+        <Button
+            android:id="@+id/col"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:onClick="color"
+            android:text="Color" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="100px"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
